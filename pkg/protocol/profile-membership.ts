@@ -8,8 +8,8 @@ export type ProfileMembershipRole =
   | "Sponsor"
   | "Follower";
 
-export type ProfileMembership = {
+export interface ProfileMembership {
   id: string;
   role: ProfileMembershipRole;
   user: User | null;
-};
+}

@@ -1,4 +1,4 @@
-export type ProfileLink = {
+export interface ProfileLink {
   id: string;
   slug: string;
   title: string;
@@ -9,4 +9,4 @@ export type ProfileLink = {
   iconKey: string | null;
 
   order: number;
-};
+}

@@ -1,6 +1,6 @@
 export type ProfileStoryCategory = "Status" | "Announcement" | "News";
 
-export type ProfileStory = {
+export interface ProfileStory {
   id: string;
   slug: string;
   category: ProfileStoryCategory;
@@ -10,4 +10,4 @@ export type ProfileStory = {
   content: string;
 
   publishedAt: string | null;
-};
+}

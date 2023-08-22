@@ -1,6 +1,6 @@
 import { type Profile } from "./profile.ts";
 
-export type User = {
+export interface User {
   id: string;
   // email: string;
   fullname: string;
@@ -10,4 +10,4 @@ export type User = {
   twitterHandle: string;
 
   individualProfile: Profile | null;
-};
+}

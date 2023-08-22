@@ -15,7 +15,7 @@
 
     "api:check": "deno run --unstable --check --reload ./pkg/api/mod.ts",
     "api:cli": "deno repl --unstable --allow-all --eval-file=./pkg/api/cli-init.ts",
-    "api:data-seed": "deno run --unstable --allow-all ./pkg/api/seed.ts",
+    "api:data-seed": "deno run --unstable --allow-all ./pkg/api/data/seed.ts",
     "api:deploy": "export $(grep -v '^#' .env.local | xargs -0) && deployctl deploy --project=$DENO_DEPLOY_PROJECT_ID ./pkg/api/main.ts",
     "api:dev": "deno run --unstable --allow-all ./pkg/api/dev.ts",
 
