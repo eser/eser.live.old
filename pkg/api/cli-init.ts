@@ -1,7 +1,6 @@
 import { loadEnv } from "@hex/lib/options/env.ts";
 import { Connection } from "@api/data/connection.ts";
-import { seed } from "@api/data/seed.ts";
-import { profileGet } from "@api/functions/profile-get/mod.ts";
+import * as mod from "@api/mod.ts";
 
 // TODO(@eser) get dependency injection container entries instead of this
 const init = async () => {
@@ -9,8 +8,7 @@ const init = async () => {
   const kv = await Connection.instance.getKv();
 
   return {
-    seed,
-    profileGet,
+    ...mod,
     env,
     kv,
   };
