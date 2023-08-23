@@ -16,17 +16,18 @@ For Frontend:
 
 - [Fresh](https://fresh.deno.dev)
 - [Shadcn](https://shadcn/ui)
-- [Supabase](https://supabase.io)
+- [PostCSS](https://postcss.org)
 
 For Backend:
 
-- [Supabase](https://supabase.io)
-- [Prisma](https://prisma.io)
+- [Deno](https://deno.com)
+- [Deno KV](https://deno.com/kv)
 
 Prerequisites:
 
-- [Deno](https://deno.land) (recommended v1.35.2)
-- [Git](https://git-scm.com/) (recommended v2.41.0)
+- [Deno](https://deno.land) (recommended v1.36.2)
+- [Git](https://git-scm.com) (recommended v2.41.0)
+- [Pup](https://github.com/Hexagon/pup) (recommended v1.0.0-rc.7)
 
 ## Setting Up the Project
 
@@ -42,47 +43,22 @@ Navigate to the project directory:
 $ cd eser.live
 ```
 
-Install necessary packages:
+Finish configuring the project:
 
-```bash
-$ pnpm install
-```
-
-Go to the API folder and configure Supabase:
-
-```bash
-$ cd packages/api
-$ pnpx supabase start
-
-Started supabase local development setup.
-
-         API URL: http://localhost:54321
-     GraphQL URL: http://localhost:54321/graphql/v1
-          DB URL: postgresql://postgres:postgres@localhost:54322/postgres
-      Studio URL: http://localhost:54323
-    Inbucket URL: http://localhost:54324
-      JWT secret: super-secret-jwt-token-with-at-least-32-characters-long
-        anon key: aaa.bbb.ccc_ddd0
-service_role key: xxx.yyy.zzz-www
-```
-
-Copy the `.env` files in both `packages/api` and `packages/web` directories as
+Copy the `.env` files in both `pkg/api` and `pkg/web` directories as
 `.env.local` and make the necessary changes.
 
-While you're still in `packages/api` directory, initialize the database and load
-some example data:
+While you're still in `pkg/api` directory, initialize the database and load some
+example data:
 
 ```bash
-$ pnpm db:generate
-$ pnpm db:push
-$ pnpm db:seed
+$ deno task generate
 ```
 
 Lastly, go back to project root and start project in development mode:
 
 ```bash
-$ cd ../..
-$ pnpm dev
+$ pup start
 ```
 
 ## Project Management
@@ -92,18 +68,18 @@ we perform operations through the CLI. If `deno` is installed on your system,
 you can access the CLI through the following commands:
 
 ```bash
-$ cd packages/api
-$ deno task cli
+$ deno task api:cli
 ```
 
-You can access `env` and `supabase` objects through the CLI.
+You can access predefined objects such as `env`, `seed`, `profileGet`, etc.
+through the CLI.
 
 ### Examples:
 
 Getting a profile:
 
 ```js
-await profileGet(supabase, "eser", "tr");
+await profileGet("eser", "tr");
 ```
 
 ## How to Contribute

@@ -16,17 +16,18 @@ Frontend için:
 
 - [Fresh](https://fresh.deno.dev)
 - [Shadcn](https://shadcn/ui)
-- [Supabase](https://supabase.io)
+- [PostCSS](https://postcss.org)
 
 Backend için:
 
-- [Supabase](https://supabase.io)
-- [Prisma](https://prisma.io)
+- [Deno](https://deno.com)
+- [Deno KV](https://deno.com/kv)
 
 Önceden kurulu olması gerekenler:
 
-- [Deno](https://deno.land) (önerilen v1.35.2)
-- [Git](https://git-scm.com/) (önerilen v2.41.0)
+- [Deno](https://deno.land) (önerilen v1.36.2)
+- [Git](https://git-scm.com) (önerilen v2.41.0)
+- [Pup](https://github.com/Hexagon/pup) (önerilen v1.0.0-rc.7)
 
 ## Projeyi Ayağa Kaldırma
 
@@ -42,47 +43,22 @@ Proje dizinine gidin:
 $ cd eser.live
 ```
 
-Gerekli paketleri yükleyin:
+Konfigurasyonu tamamlayın:
+
+Hem `pkg/api` hem de `pkg/web` dizinlerindeki `.env` dosyalarını `.env.local`
+olarak kopyalayın ve gerekli değişiklikleri yapın.
+
+Halen `pkg/api` klasöründeyken gidip veritabanınızdaki tabloları oluşturun ve
+birkaç örnek veri ekleyin:
 
 ```bash
-$ pnpm install
-```
-
-API klasörüne gidip Supabase'i konfigure edin:
-
-```bash
-$ cd packages/api
-$ pnpx supabase start
-
-Started supabase local development setup.
-
-         API URL: http://localhost:54321
-     GraphQL URL: http://localhost:54321/graphql/v1
-          DB URL: postgresql://postgres:postgres@localhost:54322/postgres
-      Studio URL: http://localhost:54323
-    Inbucket URL: http://localhost:54324
-      JWT secret: super-secret-jwt-token-with-at-least-32-characters-long
-        anon key: aaa.bbb.ccc_ddd0
-service_role key: xxx.yyy.zzz-www
-```
-
-Hem `packages/api` hem de `packages/web` dizinlerindeki `.env` dosyalarını
-`.env.local` olarak kopyalayın ve gerekli değişiklikleri yapın.
-
-Halen `packages/api` klasöründeyken gidip veritabanınızdaki tabloları oluşturun
-ve birkaç örnek veri ekleyin:
-
-```bash
-$ pnpm db:generate
-$ pnpm db:push
-$ pnpm db:seed
+$ deno task generate
 ```
 
 Son olarak, ana dizine geri dönün ve projeyi geliştirme modunda başlatın:
 
 ```bash
-$ cd ../..
-$ pnpm dev
+$ pup start
 ```
 
 ## Proje Yönetimi
@@ -92,18 +68,18 @@ $ pnpm dev
 aracılığı ile CLI'a erişebilirsiniz:
 
 ```bash
-$ cd packages/api
-$ deno task cli
+$ deno task api:cli
 ```
 
-CLI üzerinden `env` ve `supabase` nesnelerine erişebilirsiniz.
+CLI üzerinden `env`, `seed`, `profileGet`, vb. öntanımlı nesnelere
+erişebilirsiniz.
 
 ### Örnekler:
 
 Profil getirme:
 
 ```js
-await profileGet(supabase, "eser", "tr");
+await profileGet("eser", "tr");
 ```
 
 ## Nasıl Katkıda Bulunabilirsin?

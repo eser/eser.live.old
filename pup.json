@@ -1,0 +1,16 @@
+{
+  "$schema": "https://deno.land/x/pup/docs/pup.schema.json",
+
+  "processes": [
+    {
+      "id": "api",
+      "cmd": "deno task api:start",
+      "autostart": true
+    },
+    {
+      "id": "web",
+      "cmd": "deno task web:start",
+      "autostart": true
+    }
+  ]
+}
