@@ -23,5 +23,8 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "ronilaukkarinen.vscode-stylefmt"
   }
 }

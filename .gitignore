@@ -24,4 +24,4 @@ etc/coverage/cov_profile.lcov
 
 # temporary files
 tmp/
-.pup.json-data/
+.pup.*/

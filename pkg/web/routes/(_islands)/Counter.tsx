@@ -13,7 +13,7 @@ export default function Counter(_props: CounterProps) {
   return (
     <div class="flex gap-8 py-6">
       <Button onClick={() => count.value -= 1}>-1</Button>
-      <p class="text-3xl">{count}</p>
+      <p>{count}</p>
       <Button onClick={() => count.value += 1}>+1</Button>
     </div>
   );

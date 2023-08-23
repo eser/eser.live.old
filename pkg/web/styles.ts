@@ -30,16 +30,19 @@ export async function buildStyles() {
   const __dirname = new URL(".", import.meta.url).pathname;
 
   const oldCwd = Deno.cwd();
-  Deno.chdir(__dirname);
 
-  const STYLES_INPUT_GLOB = `${__dirname}/assets/**/*.css`;
-  const STYLES_OUTPUT_DIRECTORY = `${__dirname}static/`;
+  try {
+    Deno.chdir(__dirname);
 
-  for await (const entry of expandGlob(STYLES_INPUT_GLOB)) {
-    await buildStyle(__dirname, entry.path, STYLES_OUTPUT_DIRECTORY);
+    const STYLES_INPUT_GLOB = `${__dirname}/assets/**/*.css`;
+    const STYLES_OUTPUT_DIRECTORY = `${__dirname}static/`;
+
+    for await (const entry of expandGlob(STYLES_INPUT_GLOB)) {
+      await buildStyle(__dirname, entry.path, STYLES_OUTPUT_DIRECTORY);
+    }
+  } finally {
+    Deno.chdir(oldCwd);
   }
-
-  Deno.chdir(oldCwd);
 }
 
 if (import.meta.main) {
