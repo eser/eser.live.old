@@ -6,8 +6,11 @@ import tailwindcss from "tailwindcss";
 
 export default {
   plugins: [
+    // @ts-ignore no call signature
     tailwindcss(),
+    // @ts-ignore no call signature
     customMediaPlugin(),
+    // @ts-ignore no call signature
     postcssPresetEnv({
       stage: 3,
       features: {

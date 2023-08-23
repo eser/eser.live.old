@@ -1,3 +1,8 @@
+// deno-lint-ignore prefer-namespace-keyword
+declare module globalThis {
+  let process: unknown;
+}
+
 if (globalThis.process === undefined) {
   globalThis.process = {
     env: {},

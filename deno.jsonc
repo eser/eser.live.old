@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true
   },
   "lock": false,
   "importMap": "./import_map.json",
@@ -20,7 +23,7 @@
     "api:dev": "deno run --unstable --allow-all ./pkg/api/dev.ts",
 
     "web:build": "deno run --allow-all ./pkg/web/dev.ts build",
-    "web:check": "deno run --unstable --check --reload ./pkg/web/mod.ts",
+    "web:check": "deno check --reload ./pkg/web/dev.ts",
     "web:deploy": "export $(grep -v '^#' .env.local | xargs -0) && deployctl deploy --project=$DENO_DEPLOY_PROJECT_ID ./pkg/web/main.ts",
     "web:dev": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run --watch=./pkg/web/assets/,./pkg/web/routes/ ./pkg/web/dev.ts",
     "web:preview": "deno run --allow-all ./pkg/web/main.ts",

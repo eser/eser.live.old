@@ -41,5 +41,4 @@ yeri var.
 - Koda katkıda bulunmak için: Repo'yu forklayın, değişikliklerinizi forkunuza
   gönderin ve bir pull request gönderin.
 - Bir hatayı bildirmek için: Bir şey çalışmıyorsa, lütfen bunu
-  [GitHub Issues](https://github.com/eser/eser.live/issues) üzerinden
-  bildirin.
+  [GitHub Issues](https://github.com/eser/eser.live/issues) üzerinden bildirin.

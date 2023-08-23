@@ -110,9 +110,9 @@ await profileGet(supabase, "eser", "tr");
 
 We welcome contributions from everyone. To start please
 [read our contributing guide](CONTRIBUTING.en.md). If you want to help you can
-check out our [issues](https://github.com/eser/eser.live/issues). If you
-have any questions and/or stuck at any point, feel free to ask for help on
-GitHub Issues.
+check out our [issues](https://github.com/eser/eser.live/issues). If you have
+any questions and/or stuck at any point, feel free to ask for help on GitHub
+Issues.
 
 ## License
 
