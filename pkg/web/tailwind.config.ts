@@ -1,4 +1,5 @@
 import { type Config } from "tailwindcss";
+// import * as tailwindAnimate from "tailwindcss-animate";
 
 export default {
   corePlugins: {
@@ -13,5 +14,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [], // tailwindAnimate
 } satisfies Config;

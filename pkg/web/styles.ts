@@ -34,11 +34,15 @@ export async function buildStyles() {
   try {
     Deno.chdir(__dirname);
 
-    const STYLES_INPUT_GLOB = `${__dirname}/assets/**/*.css`;
+    const STYLES_INPUT_GLOB = `${__dirname}/shared/assets/**/*.css`;
     const STYLES_OUTPUT_DIRECTORY = `${__dirname}static/`;
 
     for await (const entry of expandGlob(STYLES_INPUT_GLOB)) {
-      await buildStyle(__dirname, entry.path, STYLES_OUTPUT_DIRECTORY);
+      await buildStyle(
+        `${__dirname}/shared`,
+        entry.path,
+        STYLES_OUTPUT_DIRECTORY,
+      );
     }
   } finally {
     Deno.chdir(oldCwd);

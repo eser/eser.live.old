@@ -1,6 +1,6 @@
 // import type { Signal } from "@preact/signals";
 import { useSignal } from "@preact/signals";
-import { Button } from "../(_components)/Button.tsx";
+import { Button } from "@web/shared/components/ui/button.tsx";
 
 // deno-lint-ignore no-empty-interface
 interface CounterProps {
@@ -12,9 +12,13 @@ export default function Counter(_props: CounterProps) {
 
   return (
     <div class="flex gap-8 py-6">
-      <Button onClick={() => count.value -= 1}>-1</Button>
+      <Button variant="bright" size="lg" onClick={() => count.value -= 1}>
+        -1
+      </Button>
       <p>{count}</p>
-      <Button onClick={() => count.value += 1}>+1</Button>
+      <Button variant="bright" size="lg" onClick={() => count.value += 1}>
+        +1
+      </Button>
     </div>
   );
 }

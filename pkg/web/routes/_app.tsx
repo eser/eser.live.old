@@ -7,11 +7,11 @@ export default function App(props: AppProps) {
     <html lang="en">
       <head>
         <title>My Fresh App</title>
+
+        <link rel="stylesheet" href="/assets/globals.css" />
       </head>
       <body>
         <Component />
-
-        <link rel="stylesheet" href="/assets/globals.css" />
       </body>
     </html>
   );

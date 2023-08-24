@@ -10,19 +10,31 @@
 
     "$fresh/": "https://deno.land/x/fresh@1.4.2/",
     "$std/": "https://deno.land/std@0.198.0/",
-    "preact": "https://esm.sh/preact@10.15.1",
-    "preact/": "https://esm.sh/preact@10.15.1/",
+    "preact": "https://esm.sh/preact@10.17.1",
+    "preact/debug": "https://esm.sh/*preact@10.17.1/debug",
+    "preact/devtools": "https://esm.sh/*preact@10.17.1/devtools",
+    "preact/hooks": "https://esm.sh/*preact@10.17.1/hooks",
+    "preact/jsx-runtime": "https://esm.sh/*preact@10.17.1/jsx-runtime",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.1",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.2.3",
-    "remark-frontmatter": "https://esm.sh/remark-frontmatter",
-    "remark-mdx-frontmatter": "https://esm.sh/remark-mdx-frontmatter",
+    "react": "https://esm.sh/*preact@10.17.1/compat",
+
     "postcss": "https://deno.land/x/postcss@8.4.16/mod.js",
     "autoprefixer": "npm:autoprefixer",
     "postcss-csso": "npm:postcss-csso",
     "postcss-custom-media": "npm:postcss-custom-media",
     "postcss-preset-env": "npm:postcss-preset-env",
     "tailwindcss": "npm:tailwindcss",
-    "@mdx-js/mdx": "https://esm.sh/@mdx-js/mdx@2.3.0"
+    "tailwindcss-animate": "npm:tailwindcss-animate",
+
+    "@mdx-js/mdx": "https://esm.sh/@mdx-js/mdx@2.3.0",
+    "remark-frontmatter": "https://esm.sh/remark-frontmatter",
+    "remark-mdx-frontmatter": "https://esm.sh/remark-mdx-frontmatter",
+
+    "class-variance-authority": "https://esm.sh/class-variance-authority@0.7.0?external=clsx",
+    "clsx": "https://esm.sh/clsx@2.0.0",
+    "@radix-ui/react-compose-refs": "https://esm.sh/@radix-ui/react-compose-refs@1.0.1?external=react",
+    "@radix-ui/react-slot": "https://esm.sh/@radix-ui/react-slot@1.0.2?external=react,@radix-ui/react-compose-refs"
   }
 }

@@ -32,7 +32,7 @@
     "web:build": "deno run --allow-all ./pkg/web/dev.ts build",
     "web:check": "deno check --reload ./pkg/web/dev.ts",
     "web:deploy": "export $(grep -v '^#' .env.local | xargs -0) && deployctl deploy --project=$DENO_DEPLOY_PROJECT_ID ./pkg/web/main.ts",
-    "web:dev": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run --watch=./pkg/web/assets/,./pkg/web/routes/ ./pkg/web/dev.ts",
+    "web:dev": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run --watch=./pkg/web/shared/assets/,./pkg/web/routes/ ./pkg/web/dev.ts",
     "web:preview": "deno run --allow-all ./pkg/web/main.ts",
     "web:start": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run ./pkg/web/main.ts",
     "web:update": "echo deno run --allow-all --reload https://fresh.deno.dev/update ./pkg/web/"
