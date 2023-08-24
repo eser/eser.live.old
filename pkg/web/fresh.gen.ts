@@ -7,7 +7,34 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_layout.tsx";
 import * as $3 from "./routes/index.tsx";
 import * as $4 from "./routes/test.tsx";
-import * as $$0 from "./routes/(_islands)/Counter.tsx";
+import * as $$0 from "./islands/ui/accordion.tsx";
+import * as $$1 from "./islands/ui/alert-dialog.tsx";
+import * as $$2 from "./islands/ui/aspect-ratio.tsx";
+import * as $$3 from "./islands/ui/avatar.tsx";
+import * as $$4 from "./islands/ui/calendar.tsx";
+import * as $$5 from "./islands/ui/checkbox.tsx";
+import * as $$6 from "./islands/ui/collapsible.tsx";
+import * as $$7 from "./islands/ui/command.tsx";
+import * as $$8 from "./islands/ui/context-menu.tsx";
+import * as $$9 from "./islands/ui/dialog.tsx";
+import * as $$10 from "./islands/ui/dropdown-menu.tsx";
+import * as $$11 from "./islands/ui/hover-card.tsx";
+import * as $$12 from "./islands/ui/label.tsx";
+import * as $$13 from "./islands/ui/menubar.tsx";
+import * as $$14 from "./islands/ui/popover.tsx";
+import * as $$15 from "./islands/ui/progress.tsx";
+import * as $$16 from "./islands/ui/radio-group.tsx";
+import * as $$17 from "./islands/ui/scroll-area.tsx";
+import * as $$18 from "./islands/ui/select.tsx";
+import * as $$19 from "./islands/ui/separator.tsx";
+import * as $$20 from "./islands/ui/sheet.tsx";
+import * as $$21 from "./islands/ui/slider.tsx";
+import * as $$22 from "./islands/ui/switch.tsx";
+import * as $$23 from "./islands/ui/tabs.tsx";
+import * as $$24 from "./islands/ui/toaster.tsx";
+import * as $$25 from "./islands/ui/toggle.tsx";
+import * as $$26 from "./islands/ui/tooltip.tsx";
+import * as $$27 from "./routes/(_islands)/Counter.tsx";
 
 const manifest = {
   routes: {
@@ -18,7 +45,34 @@ const manifest = {
     "./routes/test.tsx": $4,
   },
   islands: {
-    "./routes/(_islands)/Counter.tsx": $$0,
+    "./islands/ui/accordion.tsx": $$0,
+    "./islands/ui/alert-dialog.tsx": $$1,
+    "./islands/ui/aspect-ratio.tsx": $$2,
+    "./islands/ui/avatar.tsx": $$3,
+    "./islands/ui/calendar.tsx": $$4,
+    "./islands/ui/checkbox.tsx": $$5,
+    "./islands/ui/collapsible.tsx": $$6,
+    "./islands/ui/command.tsx": $$7,
+    "./islands/ui/context-menu.tsx": $$8,
+    "./islands/ui/dialog.tsx": $$9,
+    "./islands/ui/dropdown-menu.tsx": $$10,
+    "./islands/ui/hover-card.tsx": $$11,
+    "./islands/ui/label.tsx": $$12,
+    "./islands/ui/menubar.tsx": $$13,
+    "./islands/ui/popover.tsx": $$14,
+    "./islands/ui/progress.tsx": $$15,
+    "./islands/ui/radio-group.tsx": $$16,
+    "./islands/ui/scroll-area.tsx": $$17,
+    "./islands/ui/select.tsx": $$18,
+    "./islands/ui/separator.tsx": $$19,
+    "./islands/ui/sheet.tsx": $$20,
+    "./islands/ui/slider.tsx": $$21,
+    "./islands/ui/switch.tsx": $$22,
+    "./islands/ui/tabs.tsx": $$23,
+    "./islands/ui/toaster.tsx": $$24,
+    "./islands/ui/toggle.tsx": $$25,
+    "./islands/ui/tooltip.tsx": $$26,
+    "./routes/(_islands)/Counter.tsx": $$27,
   },
   baseUrl: import.meta.url,
 };

@@ -1,4 +1,4 @@
-import * as jsxRuntime from "preact/jsx-runtime";
+import * as jsxRuntime from "react/jsx-runtime";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { compile, type CompileOptions } from "@mdx-js/mdx";

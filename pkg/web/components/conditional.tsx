@@ -1,10 +1,10 @@
-import { JSX } from "preact";
+import { type ReactNode } from "react";
 
 export interface ConditionalProps {
   test: boolean;
-  then?: JSX.Element;
-  else?: JSX.Element;
-  children?: JSX.Element;
+  then?: ReactNode;
+  else?: ReactNode;
+  children?: ReactNode;
 }
 
 export const Conditional = (props: ConditionalProps) => {

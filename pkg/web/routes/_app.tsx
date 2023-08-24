@@ -9,6 +9,7 @@ export default function App(props: AppProps) {
         <title>My Fresh App</title>
 
         <link rel="stylesheet" href="/assets/globals.css" />
+        <link rel="stylesheet" href="/assets/layout.css" />
       </head>
       <body>
         <Component />
