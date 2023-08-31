@@ -1,8 +1,8 @@
-import { z } from "@zod";
-import { type LanguageCode } from "@protocol/languages.ts";
-import { type Profile, type ProfileEntity } from "@protocol/profile.ts";
-import { type ResultType } from "@protocol/result-type.ts";
-import { Connection } from "@api/data/connection.ts";
+import { z } from "$zod/mod.ts";
+import { type LanguageCode } from "$protocol/languages.ts";
+import { type Profile, type ProfileEntity } from "$protocol/profile.ts";
+import { type ResultType } from "$protocol/result-type.ts";
+import { Connection } from "$api/data/connection.ts";
 
 export const profileGet = async (
   slug: string,

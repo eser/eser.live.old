@@ -1,4 +1,4 @@
-import { AppProps } from "$fresh/server.ts";
+import { AppProps } from "$cool/lime/server.ts";
 
 export default function App(props: AppProps) {
   const { Component } = props;
@@ -6,7 +6,7 @@ export default function App(props: AppProps) {
   return (
     <html lang="en">
       <head>
-        <title>My Fresh App</title>
+        <title>Cool lime app</title>
 
         <link rel="stylesheet" href="/assets/globals.css" />
         <link rel="stylesheet" href="/assets/layout.css" />

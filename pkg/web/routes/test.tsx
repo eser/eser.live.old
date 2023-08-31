@@ -1,10 +1,10 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "$cool/lime/runtime.ts";
 
 export default function Test() {
   return (
     <>
       <Head>
-        <title>coollime-project: test</title>
+        <title>lime-project: test</title>
       </Head>
       <p>
         test

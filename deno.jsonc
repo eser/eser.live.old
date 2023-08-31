@@ -3,18 +3,50 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
 
+    "allowJs": true,
     "allowArbitraryExtensions": true,
+    "checkJs": true,
 
-    "strict": true,
-    "exactOptionalPropertyTypes": false,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+
+    "exactOptionalPropertyTypes": false
   },
   "lock": false,
   "importMap": "./import_map.json",
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended",
+        "fresh"
+      ]
+    },
+    "exclude": [
+      "./pkg/web/_lime/",
+      "./tmp/"
+    ]
+  },
+  "fmt": {
+    "exclude": [
+      "./pkg/web/_lime/",
+      "./tmp/"
+    ]
+  },
+  "test": {
+    "include": [
+      "./src/**/*.test.[js,jsx,ts,tsx]"
+    ]
+  },
+  "bench": {
+    "include": [
+      "./src/**/*.bench.[js,jsx,ts,tsx]"
+    ]
+  },
   "tasks": {
+    "cleanup": "rm deno.lock && deno cache --unstable --reload ./pkg/api/mod.ts",
     "generate": "deno task api:data-seed",
 
     "test": "deno test --unstable --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run --parallel --watch",
@@ -34,23 +66,6 @@
     "web:deploy": "export $(grep -v '^#' .env.local | xargs -0) && deployctl deploy --project=$DENO_DEPLOY_PROJECT_ID ./pkg/web/main.ts",
     "web:dev": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run --watch=./pkg/web/shared/assets/,./pkg/web/routes/ ./pkg/web/dev.ts",
     "web:preview": "deno run --allow-all ./pkg/web/main.ts",
-    "web:start": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run ./pkg/web/main.ts",
-    "web:update": "echo deno run --allow-all --reload https://fresh.deno.dev/update ./pkg/web/"
-  },
-  "lint": {
-    "exclude": [
-      "./pkg/web/_fresh/"
-    ],
-    "rules": {
-      "tags": [
-        "recommended",
-        "fresh"
-      ]
-    }
-  },
-  "fmt": {
-    "exclude": [
-      "./pkg/web/_fresh/"
-    ]
+    "web:start": "deno run --allow-sys --allow-net --allow-env --allow-read --allow-write --allow-run ./pkg/web/main.ts"
   }
 }

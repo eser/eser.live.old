@@ -3,7 +3,7 @@
 import * as path from "$std/path/mod.ts";
 import { expandGlob } from "$std/fs/mod.ts";
 
-import "@web/process-fix.ts";
+import "$web/process-fix.ts";
 import postcss from "postcss";
 import postcssConfig from "./postcss.config.ts";
 

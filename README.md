@@ -14,7 +14,7 @@ Projelerimizi oluşturmak için kullandığımız teknolojiler şunlardır:
 
 Frontend için:
 
-- [Fresh](https://fresh.deno.dev)
+- [cool lime](https://coollime.deno.dev)
 - [Shadcn](https://shadcn/ui)
 - [PostCSS](https://postcss.org)
 

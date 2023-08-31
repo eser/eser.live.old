@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head } from "$cool/lime/runtime.ts";
 
 export default function Error404() {
   return (

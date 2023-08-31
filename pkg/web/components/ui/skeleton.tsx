@@ -1,4 +1,4 @@
-import { cn } from "@web/shared/lib/utils.ts";
+import { cn } from "$web/shared/lib/utils.ts";
 
 export const Skeleton = ({
   className,

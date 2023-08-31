@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IS_BROWSER } from "$fresh/runtime.ts";
+import { IS_BROWSER } from "$cool/lime/runtime.ts";
 
 export function Button(props: React.HTMLAttributes<HTMLButtonElement>) {
   return (

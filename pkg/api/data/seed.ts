@@ -1,6 +1,6 @@
-import { ulid } from "@ulid";
-import { type ProfileEntity } from "@protocol/profile.ts";
-import { Connection } from "@api/data/connection.ts";
+import { ulid } from "$ulid/mod.ts";
+import { type ProfileEntity } from "$protocol/profile.ts";
+import { Connection } from "$api/data/connection.ts";
 
 export const seed = async () => {
   const kv = await Connection.instance.getKv();

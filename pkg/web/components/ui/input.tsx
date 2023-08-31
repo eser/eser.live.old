@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@web/shared/lib/utils.ts";
+import { cn } from "$web/shared/lib/utils.ts";
 
 // deno-lint-ignore no-empty-interface
 export interface InputProps

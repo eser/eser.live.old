@@ -1,6 +1,6 @@
 // import type { Signal } from "@preact/signals";
 import { useSignal } from "@preact/signals";
-import { Button } from "@web/components/ui/button.tsx";
+import { Button } from "$web/components/ui/button.tsx";
 
 // deno-lint-ignore no-empty-interface
 interface CounterProps {

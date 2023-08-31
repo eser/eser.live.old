@@ -1,6 +1,6 @@
-import { loadEnv } from "@hex/lib/options/env.ts";
-import { Connection } from "@api/data/connection.ts";
-import * as mod from "@api/mod.ts";
+import { loadEnv } from "$cool/hex/options/env.ts";
+import { Connection } from "$api/data/connection.ts";
+import * as mod from "$api/mod.ts";
 
 // TODO(@eser) get dependency injection container entries instead of this
 const init = async () => {

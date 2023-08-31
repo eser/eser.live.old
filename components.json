@@ -11,7 +11,7 @@
     "cssVariables": true
   },
   "aliases": {
-    "components": "@web/shared/components",
-    "utils": "@web/shared/lib/utils.ts"
+    "components": "$web/shared/components",
+    "utils": "$web/shared/lib/utils.ts"
   }
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@web/shared/lib/utils.ts";
+import { cn } from "$web/shared/lib/utils.ts";
 
 export const Card = React.forwardRef<
   HTMLDivElement,
@@ -10,7 +10,7 @@ export const Card = React.forwardRef<
     ref={ref}
     className={cn(
       "rounded-xl border shadow",
-      class,
+      className,
     )}
     {...props}
   />

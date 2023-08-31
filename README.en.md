@@ -14,7 +14,7 @@ These are the technologies we use to build our projects:
 
 For Frontend:
 
-- [Fresh](https://fresh.deno.dev)
+- [cool lime](https://coollime.deno.dev)
 - [Shadcn](https://shadcn/ui)
 - [PostCSS](https://postcss.org)
 
