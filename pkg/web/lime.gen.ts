@@ -37,6 +37,7 @@ import * as $$26 from "./islands/ui/toaster.tsx";
 import * as $$27 from "./islands/ui/toggle.tsx";
 import * as $$28 from "./islands/ui/tooltip.tsx";
 import * as $$29 from "./routes/(_islands)/Counter.tsx";
+import * as $$30 from "./routes/(_islands)/ValueFromContext.tsx";
 
 const manifest = {
   routes: {
@@ -77,6 +78,7 @@ const manifest = {
     "./islands/ui/toggle.tsx": $$27,
     "./islands/ui/tooltip.tsx": $$28,
     "./routes/(_islands)/Counter.tsx": $$29,
+    "./routes/(_islands)/ValueFromContext.tsx": $$30,
   },
   baseUrl: import.meta.url,
 };

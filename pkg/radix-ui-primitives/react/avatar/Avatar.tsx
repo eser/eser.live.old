@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { createContextScope } from "../context/mod.ts";
 import { useCallbackRef } from "../use-callback-ref/mod.ts";
 import { useLayoutEffect } from "../use-layout-effect/mod.ts";

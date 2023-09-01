@@ -1,6 +1,6 @@
 /// <reference types="resize-observer-browser" />
 
-import * as React from "preact/compat";
+import * as React from "react";
 import { useLayoutEffect } from "../use-layout-effect/mod.ts";
 
 function useSize(element: HTMLElement | null) {

@@ -1,22 +1,19 @@
-// import type { Signal } from "@preact/signals";
-import { useSignal } from "@preact/signals";
+import { type Signal } from "@preact/signals-react";
+import { IS_BROWSER } from "$cool/lime/runtime.ts";
 import { Button } from "$web/components/ui/button.tsx";
 
-// deno-lint-ignore no-empty-interface
 interface CounterProps {
-  // count: Signal<number>;
+  count: Signal<number>;
 }
 
-export default function Counter(_props: CounterProps) {
-  const count = useSignal(3);
-
+export default function Counter(props: CounterProps) {
   return (
     <div className="flex items-center	gap-8 py-6">
-      <Button variant="outline" size="default" onClick={() => count.value -= 1}>
+      <Button variant="outline" size="default" onClick={() => props.count.value -= 1} disabled={!IS_BROWSER}>
         -1
       </Button>
       <div>{count}</div>
-      <Button variant="outline" size="default" onClick={() => count.value += 1}>
+      <Button variant="outline" size="default" onClick={() => props.count.value += 1} disabled={!IS_BROWSER}>
         +1
       </Button>
     </div>

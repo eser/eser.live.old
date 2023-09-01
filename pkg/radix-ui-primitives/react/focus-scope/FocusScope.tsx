@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { useComposedRefs } from "../compose-refs/mod.ts";
 import { Primitive } from "../primitive/mod.ts";
 import { useCallbackRef } from "../use-callback-ref/mod.ts";

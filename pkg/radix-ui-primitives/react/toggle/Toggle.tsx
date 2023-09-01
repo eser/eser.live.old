@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";
 import { useControllableState } from "../use-controllable-state/mod.ts";
 import { Primitive } from "../primitive/mod.ts";

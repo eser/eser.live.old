@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";
 import { useComposedRefs } from "../compose-refs/mod.ts";

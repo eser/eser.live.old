@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 
 type PossibleRef<T> = React.Ref<T> | undefined;
 

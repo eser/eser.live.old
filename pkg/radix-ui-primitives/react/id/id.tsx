@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { useLayoutEffect } from "../use-layout-effect/mod.ts";
 
 // We `toString()` to prevent bundlers from trying to `import { useId } from 'react';`

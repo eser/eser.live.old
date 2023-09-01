@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";
 import { createContextScope } from "../context/mod.ts";
 import * as RovingFocusGroup from "../roving-focus/mod.ts";

@@ -1,6 +1,6 @@
 /// <reference types="resize-observer-browser" />
 
-import * as React from "preact/compat";
+import * as React from "react";
 import { Primitive } from "../primitive/mod.ts";
 import { Presence } from "../presence/mod.ts";
 import { createContextScope } from "../context/mod.ts";

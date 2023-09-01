@@ -1,16 +1,11 @@
-import * as ReactHooks from "preact/hooks";
+import { useSignal } from "@preact/signals-react";
 import { Head } from "$cool/lime/runtime.ts";
 import Counter from "./(_islands)/Counter.tsx";
+import ValueFromContext from "./(_islands)/ValueFromContext.tsx";
 import { mdxCompile } from "../mdx.ts";
 
-import { TestContext } from "../islands/_testContext.ts";
-
 export default async function Home() {
-  // const count = useSignal(3);
-  // const count = 3;
-
-  // const value = ReactHooks.useContext(TestContext);
-  const value = "ede";
+  const count = useSignal(3);
 
   const { Component, frontmatter } = await mdxCompile(`---
 hello: frontmatter
@@ -24,10 +19,12 @@ Rest of **document**`);
         <title>lime-project</title>
       </Head>
       <p>
-        Try updating this message in the {value}
+        Try updating this message in the
         <code className="mx-2">./routes/index.tsx</code> file, and refresh.
       </p>
-      <Counter />
+
+      <Counter count={count} />
+      <ValueFromContext />
 
       {JSON.stringify(frontmatter, null, 2)}
       <Component />

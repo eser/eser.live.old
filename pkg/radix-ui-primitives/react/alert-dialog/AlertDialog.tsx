@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { createContextScope } from "../context/mod.ts";
 import { useComposedRefs } from "../compose-refs/mod.ts";
 import * as DialogPrimitive from "../dialog/mod.ts";

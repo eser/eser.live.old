@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { createContextScope } from "../context/mod.ts";
 import { Primitive } from "../primitive/mod.ts";
 import * as RovingFocusGroup from "../roving-focus/mod.ts";

@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import {
   arrow as floatingUIarrow,
   autoUpdate,

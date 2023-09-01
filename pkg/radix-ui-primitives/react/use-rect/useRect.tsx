@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { observeElementRect } from "../../core/rect/mod.ts";
 
 import type { Measurable } from "../../core/rect/mod.ts";

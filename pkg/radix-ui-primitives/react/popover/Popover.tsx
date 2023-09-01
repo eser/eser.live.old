@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { composeEventHandlers } from "@radix-ui/primitive";
 import { useComposedRefs } from "../compose-refs/mod.ts";
 import { createContextScope } from "../context/mod.ts";

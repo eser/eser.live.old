@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import * as VisuallyHiddenPrimitive from "../visually-hidden/mod.ts";
 
 const NAME = "AccessibleIcon";

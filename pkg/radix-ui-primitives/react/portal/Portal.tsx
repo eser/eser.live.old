@@ -1,5 +1,5 @@
-import * as React from "preact/compat";
-import * as ReactDOM from "preact/compat";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { Primitive } from "../primitive/mod.ts";
 
 import type * as Radix from "../primitive/mod.ts";

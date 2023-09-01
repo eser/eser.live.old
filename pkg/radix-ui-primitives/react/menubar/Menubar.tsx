@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { createCollection } from "../collection/mod.ts";
 import { useDirection } from "../direction/mod.ts";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";

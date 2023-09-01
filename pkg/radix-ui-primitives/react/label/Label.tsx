@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { Primitive } from "../primitive/mod.ts";
 
 import type * as Radix from "../primitive/mod.ts";

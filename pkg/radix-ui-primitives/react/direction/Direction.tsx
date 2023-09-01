@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 
 type Direction = "ltr" | "rtl";
 const DirectionContext = React.createContext<Direction | undefined>(undefined);

@@ -1,7 +1,7 @@
 /// <reference types="resize-observer-browser" />
 
-import * as React from "preact/compat";
-import * as ReactDOM from "preact/compat";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { createContextScope } from "../context/mod.ts";
 import { composeEventHandlers } from "@radix-ui/primitive";
 import { dispatchDiscreteCustomEvent, Primitive } from "../primitive/mod.ts";

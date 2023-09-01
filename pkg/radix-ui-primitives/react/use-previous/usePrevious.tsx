@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 
 function usePrevious<T>(value: T) {
   const ref = React.useRef({ value, previous: value });

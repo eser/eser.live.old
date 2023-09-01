@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";
 import { composeRefs } from "../compose-refs/mod.ts";
 import { createContextScope } from "../context/mod.ts";

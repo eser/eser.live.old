@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { clamp } from "../../core/number/mod.ts";
 import { composeEventHandlers } from "../../core/primitive/mod.ts";

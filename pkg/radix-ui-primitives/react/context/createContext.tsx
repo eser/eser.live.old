@@ -1,4 +1,4 @@
-import * as React from "preact/compat";
+import * as React from "react";
 
 function createContext<ContextValueType extends object | null>(
   rootComponentName: string,
