@@ -59,3 +59,7 @@
     @apply max-w-full	object-cover;
   }
 }
+
+.island {
+  border: 1px solid red;
+}

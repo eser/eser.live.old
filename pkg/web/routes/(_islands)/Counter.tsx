@@ -12,7 +12,7 @@ export default function Counter(props: CounterProps) {
       <Button variant="outline" size="default" onClick={() => props.count.value -= 1} disabled={!IS_BROWSER}>
         -1
       </Button>
-      <div>{count}</div>
+      <div>{props.count}</div>
       <Button variant="outline" size="default" onClick={() => props.count.value += 1} disabled={!IS_BROWSER}>
         +1
       </Button>

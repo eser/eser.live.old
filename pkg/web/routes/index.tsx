@@ -1,17 +1,22 @@
 import { useSignal } from "@preact/signals-react";
-import { Head } from "$cool/lime/runtime.ts";
+import { Head, Island } from "$cool/lime/runtime.ts";
 import Counter from "./(_islands)/Counter.tsx";
 import ValueFromContext from "./(_islands)/ValueFromContext.tsx";
 import { mdxCompile } from "../mdx.ts";
+// import { useMemo } from "react";
 
-export default async function Home() {
+export default function Home() {
   const count = useSignal(3);
 
-  const { Component, frontmatter } = await mdxCompile(`---
-hello: frontmatter
----
+  // const count = useMemo(() => {
+  //   return 5;
+  // }, []);
 
-Rest of **document**`);
+//   const { Component, frontmatter } = await mdxCompile(`---
+// hello: frontmatter
+// ---
+
+// Rest of **document**`);
 
   return (
     <>
@@ -23,11 +28,15 @@ Rest of **document**`);
         <code className="mx-2">./routes/index.tsx</code> file, and refresh.
       </p>
 
-      <Counter count={count} />
-      <ValueFromContext />
+      <Island>
+        <Counter count={count} />
+      </Island>
+      <Island id="context">
+        <ValueFromContext />
+      </Island>
 
-      {JSON.stringify(frontmatter, null, 2)}
-      <Component />
+      {/* {JSON.stringify(frontmatter, null, 2)}
+      <Component /> */}
     </>
   );
 }
